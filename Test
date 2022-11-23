@@ -273,7 +273,7 @@ Creator.runEntity = function(entity)
                         entity.Model:SetAttribute("StopMovement", true)
 
                         if crucifix then
-                            crucifix.Growl:Play()
+                            
                             
                             -- Repent
 
@@ -295,7 +295,7 @@ Creator.runEntity = function(entity)
 
                             return
                         end
-                    end
+                    
 
                     -- Killing
         
