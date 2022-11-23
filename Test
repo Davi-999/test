@@ -295,7 +295,7 @@ Creator.runEntity = function(entity)
 
                             return
                         end
-                    
+                    end
 
                     -- Killing
         
