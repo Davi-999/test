@@ -122,14 +122,9 @@ local function destroy(entityTable)
 end
 
 local function shouldDeflect()
-    if workspace:FindFirstChild("Doggo") then
-        return true
-    elseif Char:FindFirstChild("Crucifix") then
+    if workspace:FindFirstChild("Crucifix") then
         return true
     end
-
-    return false
-end
 
 -- Functions
 
@@ -264,7 +259,7 @@ Creator.runEntity = function(entity)
                 if (Root.Position - entity.Model.PrimaryPart.Position).Magnitude <= entity.Config.KillRange then
                     -- Entity deflection
                     
-                    local doggo = workspace:FindFirstChild("Doggo")
+                    local doggo = workspace:FindFirstChild("Crucifix")
                     local crucifix = Char:FindFirstChild("Crucifix")
                     
                     if doggo or crucifix then
